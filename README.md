@@ -4,20 +4,18 @@
 
 <h3>- Skills assessed :</h3>
 <ul>
-  <li>  Authentifier un utilisateur et maintenir sa session</li>
-  <li>  Personnaliser le contenu envoyé à un client web</li>
-  <li>  Gérer un stockage de données à l'aide de SQL</li>
-  <li>  Implémenter un stockage de données sécurisé en utilisant SQL</li>
+  <li>  Authenticate a user and maintain their session</li>
+  <li>  Personalize the content sent to a web client</li>
+  <li>  Manage data storage using SQL</li>
+  <li>  Implement secure data storage using SQL</li>
 </ul>
 
-### - Technologies utilisées :
+### - Technologies used :
 NodeJs - VueJs - MySQL - Bootstrap - Sass
-
-Démo du site sur youtube : https://www.youtube.com/watch?v=RFtriVHPOjM&t=2s&ab_channel=ThomasLandais
   
 ## INSTALLATION
-### Prérequis :
-Il vous faut avoir installé sur votre machine :
+### Prerequisites :
+You must have installed on your machine :
 
 <ul>
   <li> Git : https://git-scm.com/downloads</li>
@@ -25,61 +23,48 @@ Il vous faut avoir installé sur votre machine :
   <li> MySql :  https://dev.mysql.com/downloads/installer/</li>
 </ul>
 
-Créer un dossier vide puis cloner ce repository à l'intérieur : 
+Create an empty folder then clone this repository inside : 
 
 ```
-git clone https://github.com/ThomasL9731/Groupomania.git
+git clone https://github.com/MrMWebDev/groupomania
 ```
 ## MySQL
-Dans le fichier groupomania/backend/.env ,mettre le mot de passe d'accès à votre base de donnée et votre nom d'utilisateur si besoin (root par défaut)
+In the groupomania/backend/.env file, put the password to access your database and your username if necessary (root by default)
 ```
 DB_USER=root
 DB_PASS=
 ```
-Ouvrir MySql command Line client puis effectuer ces deux lignes de commandes :
+Open MySql command Line client then perform these two command lines :
 ```
 CREATE DATABASE groupomania;
 USE groupomania;
 ```
-Importer le fichier groupomania.sql (qui ce trouve a la racine du projet) : 
+Import the groupomania.sql file (which is at the root of the project) : 
 ```
-source (chemin vers le fichier groupomania.sql);
+source (path to groupomania.sql file);
 ```
-Attention a indiquer le chemin avec des "/" et non des "\ ".
+Be careful to indicate the path with "/" and not "\".
 
 ## BACK END
-Ouvrir un terminal dans le dossier backend puis effectuer les lignes de commandes suivantes :
+Open a terminal in the backend folder then run the following command lines:
 ```
 npm install
 node server
 ```
 ## FRONT END
-Ouvrir un autre terminal dans le dossier frontend puis effectuer les lignes de commandes suivantes :
+Open another terminal in the frontend folder then run the following command lines:
 ```
 npm install
 npm run serve
 ```
 
-Ouvrir le navigateur a l'adresse http://localhost:8080/
+Open browser at http://localhost:8080/
 
-### Fonctionnalités :
-Le site permet de
+### Features :
+The site allows
 <ul>
-  <li>Partager des posts (avec ou sans photos)</li>
-  <li>Commenter et liker des posts</li>
-  <li>Personnaliser son profil (changement de photo de profil, description...)</li>
-  <li>Modifier et supprimer son compte</li>
+  <li>Share posts (with or without photos)</li>
+  <li>Comment and like posts</li>
+  <li>Personalize your profile (change profile picture, description, etc.)</li>
+  <li>Modify and delete his account</li>
 </ul>
-
-Un compte admin est présent pour la modération (suppression des posts et commentaires d'autres utilisateurs).
-<br>
-Voici les codes d'accès admin :
-```
-admin@admin.com
-Admin.31
-```
-
-Bonne visite !
-
-![Capture d’écran 2021-12-14 171505](https://user-images.githubusercontent.com/76964599/146037451-051d9dcb-257f-45a3-86a0-9bc53df309fd.png)
-
