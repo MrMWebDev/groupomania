@@ -1,7 +1,7 @@
 const { pool } = require('../config/db');
 
 exports.create = (req, res, next) => {
-    // DEFINI LES CHAMPS REMPLI
+    // DEFINE FILL-IN FIELDS
     const post = {
         comment: req.body.comment,
         authorId: req.body.authorId,

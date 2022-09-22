@@ -1,7 +1,7 @@
 const { pool } = require('../config/db');
 
 exports.like = (req, res, next) => {
-    // ALL POSTS FROM LAST TO FIRST
+    // ALL POSTS
     let sql = "SELECT * FROM groupomania.like;";
     pool.execute(sql, function (err, results) {
         if (err) res.status(400).json({ err });
